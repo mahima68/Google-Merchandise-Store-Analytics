@@ -16,19 +16,49 @@
 | Acquisition by first-user source/medium | Completed and re-run | 223 MB | 12 source/medium rows returned. Latest executed results by purchase revenue: `google / organic` (1,484 purchase events; $86,645), `(direct) / (none)` (1,211; $79,196), `(data deleted) / (data deleted)` (760; $54,128), and `shop.googlemerchandisestore.com / referral` (708; $47,318). The latest query result is authoritative for this report; do not use older transcribed counts. |
 | Product performance | Completed (corrected product-name aggregation; revenue, units, and views rankings) | 218.87 MB | Top 10 rows for each ranking returned in one run. Grouping by item name combines records whose item IDs differ across events; ID counts are retained as a QA signal. |
 | Ordered session funnel | Completed (revised sequential logic) | 1.04 GB for temp-table step; 1.79 MB for final breakdown (processed) | Overall, device, and country results captured below. |
-| Device/geography segmentation | Completed | 221.29 MB | 20 device/country combinations returned; leading user segments captured below. |
+| Device/geography segmentation | Completed (ranked users, sessions, purchases, and revenue) | 221.29 MB | 3 device rows, 10 countries, and 10 device/country segments returned with purchase and revenue metrics. |
 
-### Leading device/country segments by distinct users
+### Device, country, and combined segment performance
 
-| Device | Country | Users |
-|---|---|---:|
-| Desktop | United States | 69,827 |
-| Mobile | United States | 47,775 |
-| Desktop | India | 14,918 |
-| Desktop | Canada | 11,904 |
-| Mobile | India | 10,223 |
+The query ranks users, session-start events, purchase events, and purchase revenue separately for devices, countries, and device/country pairs. These public-sample results are not the 2026 GA4 screenshot metrics.
 
-The visible result view captured these leading rows and the distinct-user/session-start columns. It did not preserve the purchase and revenue columns, so no device/country purchase or revenue ranking is reported here.
+#### Device category
+
+| Device | Users | Session-start events | Purchase events | Purchase revenue (USD) |
+|---|---:|---:|---:|---:|
+| Desktop | 158,917 | 205,978 | 3,226 | $208,815 |
+| Mobile | 109,195 | 141,111 | 2,355 | $146,768 |
+| Tablet | 6,250 | 7,881 | 111 | $6,582 |
+
+#### Top 10 countries by users
+
+| Country | Users | Session-start events | Purchase events | Purchase revenue (USD) |
+|---|---:|---:|---:|---:|
+| United States | 118,493 | 155,887 | 2,481 | $160,573 |
+| India | 25,367 | 33,259 | 530 | $34,986 |
+| Canada | 20,268 | 26,423 | 466 | $32,799 |
+| United Kingdom | 8,527 | 11,156 | 177 | $11,458 |
+| France | 5,381 | 7,057 | 119 | $6,650 |
+| Spain | 5,044 | 6,588 | 131 | $7,681 |
+| Germany | 4,866 | 6,299 | 87 | $5,288 |
+| China | 4,620 | 6,159 | 101 | $6,623 |
+| Taiwan | 4,568 | 5,980 | 87 | $4,238 |
+| Italy | 3,750 | 4,938 | 60 | $4,967 |
+
+#### Top 10 device/country pairs by users
+
+| Device | Country | Users | Session-start events | Purchase events | Purchase revenue (USD) |
+|---|---|---:|---:|---:|---:|
+| Desktop | United States | 69,827 | 90,563 | 1,413 | $94,560 |
+| Mobile | United States | 47,775 | 61,887 | 1,029 | $63,522 |
+| Desktop | India | 14,918 | 19,310 | 297 | $18,915 |
+| Desktop | Canada | 11,904 | 15,206 | 263 | $19,932 |
+| Mobile | India | 10,223 | 13,163 | 218 | $14,860 |
+| Mobile | Canada | 8,217 | 10,658 | 196 | $12,242 |
+| Desktop | United Kingdom | 4,998 | 6,484 | 101 | $6,706 |
+| Mobile | United Kingdom | 3,412 | 4,392 | 73 | $4,628 |
+| Desktop | France | 3,236 | 4,209 | 80 | $5,039 |
+| Desktop | Spain | 2,950 | 3,882 | 84 | $4,594 |
 
 ### Product performance rankings (aggregated by item name)
 
@@ -110,4 +140,4 @@ These are the highest-volume country rows captured, not all countries. The revis
 
 ## Reproducibility and limitations
 
-The companion SQL files are in `sql/`. The product query was corrected to group by item name and now returns ranked outputs for revenue, units, and views. Remaining limitations: only the top 10 product rows per ranking are shown, some product names were clipped in the result grid, and complete device/country purchase and revenue outputs were not preserved. The public sample is obfuscated and differs from the GA4 demo property's reports.
+The companion SQL files are in `sql/`. The product query groups by item name and returns the top 10 by revenue, units, and views. The device/geography query records ranked purchase and revenue summaries for devices, countries, and device/country pairs. Remaining capture limits are the top-10 cutoffs and clipped item-name text. The public sample is obfuscated and differs from the GA4 demo property's reports.
