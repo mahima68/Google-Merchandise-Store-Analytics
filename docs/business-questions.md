@@ -55,7 +55,7 @@ This document turns the project brief into measurable questions. GA4 interface f
 - BigQuery: The GA4 demo property's linked Cloud project is not owned by the analyst and is not visible in the current project picker. SQL is authored against Google's separate public obfuscated ecommerce sample; the GA4 demo export itself remains inaccessible and must not be represented as queried.
 - BigQuery query areas for inventory, first-user acquisition, device/geography, products, and ordered session funnel: **executed against the public sample** `bigquery-public-data.ga4_obfuscated_sample_ecommerce.events_*` (2020-11-01 through 2021-01-31), not the 2026 GA4 screenshots. Captured results and limitations are in `outputs/bigquery-public-sample-results.md`.
 - Findings/recommendations report and self-contained local interactive dashboard: **prepared from the supplied GA4 screenshots**. The dashboard is not a live GA4 or BigQuery connection.
-- GitHub publication: prepared for `mahima68/Google-Merchandise-Store-Analytics`; verify the repository after upload.
+- GitHub publication: **published and verified** in `mahima68/Google-Merchandise-Store-Analytics`.
 
 ## Data collection checklist for the next GA4 review
 
