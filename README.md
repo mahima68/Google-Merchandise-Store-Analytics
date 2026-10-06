@@ -56,4 +56,4 @@ See Google's [BigQuery sample dataset guide](https://developers.google.com/analy
 
 ## Project status
 
-The GA4 screenshot analysis and interactive dashboard artifact are complete as a first-pass case study. All five public-sample query areas have run in the user's Cloud Sandbox. The case study is published in this repository; deploying the dashboard as a live site is optional.
+The GA4 screenshot analysis and interactive dashboard artifact are complete as a first-pass case study. All five public-sample query areas have run in the user's Cloud Sandbox. The case study is published in this repository, and the static interactive dashboard is hosted on GitHub Pages. Dashboard values are manually transcribed snapshots, not a live GA4/BigQuery connection.
