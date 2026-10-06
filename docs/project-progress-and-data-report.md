@@ -15,13 +15,14 @@ Analyze how visitors arrive at the Google Merchandise Store, how they engage, wh
 - Created a local interactive dashboard from the supplied GA4 screenshot values.
 - Executed five BigQuery query areas against Google's public obfuscated sample (inventory, first-user acquisition, device/geography, item performance, and an ordered session funnel); captured outputs and limits are documented separately.
 - Prepared accurate CV wording that does not claim a live/published dashboard.
+- Published and verified the case study files in `mahima68/Google-Merchandise-Store-Analytics`.
 
 ### Still to do
 
 - Reconcile GA4 funnel settings and date ranges, and validate ecommerce event instrumentation.
 - Replace manually transcribed dashboard values with validated query/report outputs if desired.
-- Publish the finished case study to the user-owned GitHub repository and verify the uploaded files.
 - Edit the user's actual CV document if they provide it; at present the CV entry is prepared separately.
+- Optionally deploy the interactive dashboard as a live site; the HTML is currently committed in the repository.
 
 ## Data access: how to finish without owning the demo property's project
 
