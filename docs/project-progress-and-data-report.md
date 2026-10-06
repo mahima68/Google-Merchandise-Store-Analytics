@@ -19,7 +19,7 @@ Analyze how visitors arrive at the Google Merchandise Store, how they engage, wh
 ### Still to do
 
 - Reconcile GA4 funnel settings/date ranges and validate ecommerce event instrumentation; this needs access to the intended GA4 property's explorations and event payloads.
-- Refresh manually transcribed dashboard values only when verified report outputs become available.
+- The dashboards are static snapshots. Refresh them when new, consistently dated GA4 report outputs are available; the latest public-sample query results are now reflected in the separate sample dashboard.
 
 ## Data access: how to finish without owning the demo property's project
 
