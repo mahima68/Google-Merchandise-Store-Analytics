@@ -2,7 +2,7 @@
 
 ## Project goal
 
-Analyze how visitors arrive at the Google Merchandise Store, how they engage, which products attract and convert shoppers, where the purchase journey loses users, and what actions the business should investigate. The planned portfolio work combines GA4 reporting, BigQuery SQL, funnel and acquisition analysis, an interactive dashboard, business recommendations, a GitHub case study, and a CV entry.
+Analyze how visitors arrive at the Google Merchandise Store, how they engage, which products attract and convert shoppers, where the purchase journey loses users, and what actions the business should investigate. The portfolio work combines GA4 reporting, BigQuery SQL, funnel and acquisition analysis, an interactive dashboard, business recommendations, and a GitHub case study.
 
 ## Current status
 
