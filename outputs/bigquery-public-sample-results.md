@@ -13,7 +13,7 @@
 | Analysis | Status | Scan estimate | Captured result |
 |---|---|---:|---|
 | Data inventory | Completed | 179.02 MB | 4,295,584 event rows; 270,154 distinct pseudonymous users; 17 event names; dates 20201101–20210131 |
-| Acquisition by first-user source/medium | Completed | 223 MB | 12 source/medium rows returned. Top rows by purchase revenue included `google / organic` (103,487 users; 1,454 purchase events), `(direct) / (none)` (75,951; 1,251), `(data deleted) / (data deleted)` (17,948; 830), and Google Merchandise Store referral (26,065; 701). Revenue values were not captured in the saved screen notes, so no revenue ranking or amount is stated here. |
+| Acquisition by first-user source/medium | Completed and re-run | 223 MB | 12 source/medium rows returned. Latest executed results by purchase revenue: `google / organic` (1,484 purchase events; $86,645), `(direct) / (none)` (1,211; $79,196), `(data deleted) / (data deleted)` (760; $54,128), and `shop.googlemerchandisestore.com / referral` (708; $47,318). The latest query result is authoritative for this report; do not use older transcribed counts. |
 | Product performance | Completed | 162.66 MB | Top revenue products captured below. |
 | Ordered session funnel | Completed (revised sequential logic) | 1.04 GB for temp-table step; 1.79 MB for final breakdown (processed) | Overall, device, and country results captured below. |
 | Device/geography segmentation | Completed | 221.29 MB | 20 device/country combinations returned; leading user segments captured below. |
@@ -77,4 +77,4 @@ These are the highest-volume country rows captured, not all countries. The revis
 
 ## Reproducibility and limitations
 
-The companion SQL files are in `sql/`. Query results above are only as complete as the visible results captured during the BigQuery runs.  In particular, the acquisition result's revenue cells and the full product list were not preserved in this note. Run or reopen those saved queries if those exact values are needed. The public sample has obfuscated data and differs from the GA4 demo property's reports.
+The companion SQL files are in `sql/`. The acquisition query was re-run in BigQuery Sandbox and its leading revenue rows are now recorded above; this is first-user attribution and should not be read as session-channel performance. Query outputs remain limited to the captured result rows. In particular, the full product list and complete device/country purchase and revenue results were not preserved. The public sample is obfuscated and differs from the GA4 demo property's reports.
