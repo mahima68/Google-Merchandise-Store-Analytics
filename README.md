@@ -16,7 +16,6 @@ Understand how shoppers arrive, engage, browse products, and purchase; identify 
 - [`dashboard/index.html`](dashboard/index.html): a self-contained, interactive dashboard of the supplied GA4 report values.
 - [`dashboard/bigquery-sample.html`](dashboard/bigquery-sample.html): a separate report page for the executed 2020–2021 public-sample BigQuery results.
 - [`sql/`](sql/): BigQuery Standard SQL templates for data inventory, acquisition, device/geography, ecommerce products, and session funnel analysis.
-- [`docs/cv-entry.md`](docs/cv-entry.md): accurate CV and portfolio wording.
 
 ## Data sources
 
@@ -55,4 +54,4 @@ See Google's [BigQuery sample dataset guide](https://developers.google.com/analy
 
 ## Project status
 
-The GA4 screenshot analysis and interactive dashboard artifact are complete as a first-pass case study. All five public-sample query areas have run in the user's Cloud Sandbox. The case study is published in this repository; editing the user's actual CV and optionally deploying the dashboard as a live site remain outstanding.
+The GA4 screenshot analysis and interactive dashboard artifact are complete as a first-pass case study. All five public-sample query areas have run in the user's Cloud Sandbox. The case study is published in this repository; deploying the dashboard as a live site is optional.
