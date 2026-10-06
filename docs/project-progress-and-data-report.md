@@ -13,13 +13,13 @@ Analyze how visitors arrive at the Google Merchandise Store, how they engage, wh
 - Reviewed user-supplied GA4 reports for acquisition, engagement, device, country, products, and funnel performance.
 - Wrote evidence-based findings, limitations, and recommendations.
 - Created and published a self-contained interactive dashboard from the supplied GA4 screenshot values. It is hosted on GitHub Pages at https://mahima68.github.io/Google-Merchandise-Store-Analytics/dashboard/; its figures are static and do not update from GA4 or BigQuery.
-- Executed five BigQuery query areas against Google's public obfuscated sample (inventory, first-user acquisition, device/geography, item performance, and an ordered session funnel); captured outputs and limits are documented separately.
+- Executed five BigQuery query areas against Google's public obfuscated sample (inventory, first-user acquisition, device/geography, item performance, and an ordered session funnel); reran the product ranking to correct a prior unit-list transcription, recovered full product labels, and captured top-10 views, units, and revenue tables. Results and limits are documented separately.
 - Published and verified the case study files in `mahima68/Google-Merchandise-Store-Analytics`.
 
 ### Still to do
 
 - Reconcile GA4 funnel settings/date ranges and validate ecommerce event instrumentation; this needs access to the intended GA4 property's explorations and event payloads.
-- The dashboards are static snapshots. Refresh them when new, consistently dated GA4 report outputs are available; the latest public-sample query results are now reflected in the separate sample dashboard.
+- The dashboards are static snapshots. Refresh them when new, consistently dated GA4 report outputs are available; the separate public-sample dashboard now reflects the latest captured rankings and segment results.
 
 ## Data access: how to finish without owning the demo property's project
 
