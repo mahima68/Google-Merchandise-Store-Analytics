@@ -4,6 +4,8 @@ An end-to-end portfolio case study using GA4 reporting for the Google Merchandis
 
 > **Data provenance matters:** The GA4 screenshots and the public BigQuery sample are different datasets and time periods. The screenshots cover reports around September–October 2026. Google's public sample is obfuscated data from November 1, 2020 to January 31, 2021. Findings from one source must not be presented as though they were calculated from the other.
 
+> **[Open the live dashboard](https://mahima68.github.io/Google-Merchandise-Store-Analytics/dashboard/)**
+
 ## Business objective
 
 Understand how shoppers arrive, engage, browse products, and purchase; identify funnel friction and product/channel opportunities; translate evidence into practical next steps.
