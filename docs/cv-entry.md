@@ -12,7 +12,7 @@ Use wording that matches the current completion state. The bullets below describ
 
 ## Do not claim yet
 
-Do not claim that the private GA4 demo export was queried, that dashboard numbers are live, that the dashboard is published, or that a business change improved revenue. Those require access, publication, and validation that have not happened.
+Do not claim that the private GA4 demo export was queried, that dashboard numbers are live, that the dashboard is deployed as a live site, or that a business change improved revenue. Those require access, deployment, and validation that have not happened.
 
 ## Remaining caveats before final publication
 
