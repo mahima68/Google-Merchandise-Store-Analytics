@@ -19,7 +19,6 @@ Analyze how visitors arrive at the Google Merchandise Store, how they engage, wh
 ### Still to do
 
 - Reconcile GA4 funnel settings/date ranges and validate ecommerce event instrumentation.
-- Rerun the revised public-sample funnel SQL to capture updated overall, device, and country results; record its scan estimate if available.
 - Reopen the public-sample acquisition query if exact revenue by first-user source/medium is needed; those revenue values were not captured.
 - Refresh manually transcribed dashboard values only when verified report outputs become available.
 
