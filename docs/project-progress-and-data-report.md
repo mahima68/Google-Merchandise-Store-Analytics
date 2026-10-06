@@ -18,8 +18,7 @@ Analyze how visitors arrive at the Google Merchandise Store, how they engage, wh
 
 ### Still to do
 
-- Reconcile GA4 funnel settings/date ranges and validate ecommerce event instrumentation.
-- Reopen the public-sample acquisition query if exact revenue by first-user source/medium is needed; those revenue values were not captured.
+- Reconcile GA4 funnel settings/date ranges and validate ecommerce event instrumentation; this needs access to the intended GA4 property's explorations and event payloads.
 - Refresh manually transcribed dashboard values only when verified report outputs become available.
 
 ## Data access: how to finish without owning the demo property's project
@@ -37,6 +36,8 @@ Use Google's **public obfuscated GA4 ecommerce sample** for the SQL portfolio wo
 5. All five planned BigQuery query areas have now been executed. Keep all public-sample output separate from the GA4 screenshot findings labeled 2026.
 
 Google says the public sample can be explored with BigQuery Sandbox or the free usage tier, subject to limits, and its data is obfuscated. [Dataset guide](https://developers.google.com/analytics/bigquery/web-ecommerce-demo-dataset) · [BigQuery public dataset location notes](https://docs.cloud.google.com/bigquery/docs/datasets-intro)
+
+The first-user acquisition query (223 MB displayed estimate) was re-run successfully. Its latest leading source/medium purchase-revenue results are documented in [`../outputs/bigquery-public-sample-results.md`](../outputs/bigquery-public-sample-results.md); the previous note saying those values were unavailable is superseded.
 
 ### BigQuery execution status
 
