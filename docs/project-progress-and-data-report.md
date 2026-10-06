@@ -12,7 +12,7 @@ Analyze how visitors arrive at the Google Merchandise Store, how they engage, wh
 - Documented the GA4 events, dimensions, metrics, key-event configuration, and interpretation rules.
 - Reviewed user-supplied GA4 reports for acquisition, engagement, device, country, products, and funnel performance.
 - Wrote evidence-based findings, limitations, and recommendations.
-- Created a local interactive dashboard from the supplied GA4 screenshot values.
+- Created and published a self-contained interactive dashboard from the supplied GA4 screenshot values. It is hosted on GitHub Pages at https://mahima68.github.io/Google-Merchandise-Store-Analytics/dashboard/; its figures are static and do not update from GA4 or BigQuery.
 - Executed five BigQuery query areas against Google's public obfuscated sample (inventory, first-user acquisition, device/geography, item performance, and an ordered session funnel); captured outputs and limits are documented separately.
 - Published and verified the case study files in `mahima68/Google-Merchandise-Store-Analytics`.
 
@@ -20,7 +20,7 @@ Analyze how visitors arrive at the Google Merchandise Store, how they engage, wh
 
 - Reconcile GA4 funnel settings and date ranges, and validate ecommerce event instrumentation.
 - Replace manually transcribed dashboard values with validated query/report outputs if desired.
-- Optionally deploy the interactive dashboard as a live site; the HTML is currently committed in the repository.
+- Refresh manually transcribed figures only if new verified GA4 or BigQuery results become available.
 
 ## Data access: how to finish without owning the demo property's project
 
@@ -239,7 +239,7 @@ The very low displayed mobile rate compared with desktop merits a mobile checkou
 - `docs/data-dictionary-and-scope.md` — data dictionary, event/metric definitions, caveats.
 - `docs/business-questions.md` — questions-to-measurement plan and progress.
 - `analysis/findings.md` — concise executive findings and recommendations.
-- `dashboard/index.html` — interactive local dashboard based on supplied GA4 figures.
+- `dashboard/index.html` — published interactive static dashboard based on supplied GA4 figures.
 - `sql/01_data_inventory.sql` through `sql/05_session_funnel.sql` — SQL used for the five executed query areas; recorded outputs and scan estimates are in the output report.
 
 The SQL source is Google's public table `bigquery-public-data.ga4_obfuscated_sample_ecommerce.events_*`. Google's GA4 export schema uses one `analytics_<property_id>` dataset per linked property and daily `events_YYYYMMDD` tables when daily export is enabled. [Export schema reference](https://support.google.com/analytics/answer/7029846)
