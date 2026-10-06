@@ -56,4 +56,4 @@ Google's setup and verification guidance: [Set up BigQuery Export](https://suppo
 
 ## Current status
 
-**Not verified in the property.** The user-shared screenshots establish report outputs but do not show the date selectors for every view, key-event settings, purchase parameters, or BigQuery Links. Safari access was unavailable during this review, so no configuration has been assumed or changed.
+**Verification status.** The acquisition date range (September 7–October 4, 2026) and saved funnel exploration ranges/settings were inspected in GA4, but screenshots and explorations do not share one confirmed date range. Key-event configuration was verified: `add_to_cart`, `purchase`, `view_item`, and `xyz` are marked as key events; `xyz` showed no stream data detected. The GA4 BigQuery Link was verified to project `adh-demo-data-review` (`Demoverse`), with one stream selected, no exclusions, and Daily plus Streaming (best-effort) export selected. The actual export dataset/tables/schema, purchase event parameters, and event implementation remain unverified.
