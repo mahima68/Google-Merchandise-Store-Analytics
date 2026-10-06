@@ -15,14 +15,14 @@ Record results here:
 
 | GA4 report/exploration | Start date | End date | Time zone | Filters/breakdowns | Verified? |
 |---|---|---|---|---|---|
-| Traffic acquisition | | | | | No |
-| Engagement overview | | | | | No |
-| Tech overview/details | | | | | No |
-| Demographic details: Country | | | | | No |
-| Ecommerce purchases: Item name | | | | | No |
-| Funnel: Device category | | | | | No |
-| Funnel: Session default channel group | | | | | No |
-| Funnel: Country | | | | | No |
+| Traffic acquisition | 2026-09-07 | 2026-10-04 | Not captured | Session default channel group; no comparison shown | Yes (screenshot) |
+| Engagement overview | Not captured | Not captured | Not captured | Overview cards and event/page lists | Partial |
+| Tech overview/details | 2026-09-07 | 2026-10-04 | Not captured | Web platform; device category, OS, browser | Yes (screenshot) |
+| Demographic details: Country | Not captured | Not captured | Not captured | Country breakdown | Partial |
+| Ecommerce purchases: Item name | 2026-09-07 | 2026-10-04 | Not captured | Item name | Yes (screenshot) |
+| Funnel: Device category | Not captured | Not captured | Not captured | User-based funnel; device category | Partial |
+| Funnel: Session default channel group | 2026-09-08 | 2026-10-05 | Not captured | User-based funnel; session default channel group | Yes (saved exploration screenshot) |
+| Funnel: Country | Not captured | Not captured | Not captured | User-based funnel; country | Partial |
 
 ## B. Check key-event configuration
 
@@ -56,4 +56,4 @@ Google's setup and verification guidance: [Set up BigQuery Export](https://suppo
 
 ## Current status
 
-**Verification status.** The acquisition date range (September 7–October 4, 2026) and saved funnel exploration ranges/settings were inspected in GA4, but screenshots and explorations do not share one confirmed date range. Key-event configuration was verified: `add_to_cart`, `purchase`, `view_item`, and `xyz` are marked as key events; `xyz` showed no stream data detected. The GA4 BigQuery Link was verified to project `adh-demo-data-review` (`Demoverse`), with one stream selected, no exclusions, and Daily plus Streaming (best-effort) export selected. The actual export dataset/tables/schema, purchase event parameters, and event implementation remain unverified.
+**Verification status.** The table above distinguishes report dates visible in screenshots from ranges/configurations that were not captured. The acquisition and item reports show September 7–October 4, 2026; the latest saved channel funnel exploration shows September 8–October 5, 2026. These are separate extracts and must not be merged as one period. Key-event configuration was verified: `add_to_cart`, `purchase`, `view_item`, and `xyz` are marked as key events; `xyz` showed no stream data detected. The GA4 BigQuery Link was verified to project `adh-demo-data-review` (`Demoverse`), with one stream selected, no exclusions, and Daily plus Streaming (best-effort) export selected. The actual export dataset/tables/schema, purchase event parameters, and event implementation remain unverified.
