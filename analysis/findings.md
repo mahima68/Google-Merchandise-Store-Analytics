@@ -50,7 +50,7 @@ Some supplied funnel rows appear internally inconsistent: for example a channel'
 
 - GA4 interface screenshots are user-supplied and not raw exports; exact date filters are missing from some screenshots.
 - BigQuery event export from the demo property's linked Cloud project was not accessible in the account used here.
-- BigQuery queries target Google's separate obfuscated public sample, not the 2026 screenshot data. All five planned query areas have run. The acquisition query has been rerun and its top revenue rows are recorded; remaining output limitations, including clipped product names and incomplete device/country revenue columns, are documented in `outputs/bigquery-public-sample-results.md`.
+- BigQuery queries target Google's separate obfuscated public sample, not the 2026 screenshot data. All five planned query areas have run. The acquisition, corrected product-name rankings, and ranked device/country purchase summaries are recorded; remaining capture limits are top-10 cutoffs and several product names clipped in the visible result grid, as documented in `outputs/bigquery-public-sample-results.md`.
 - No cost/spend, margin, inventory, site performance, or experiment data was supplied; recommendations are hypotheses to investigate.
 - Revenue values in different GA4 reports may use different scopes (total revenue versus item revenue) and are not directly interchangeable.
 
