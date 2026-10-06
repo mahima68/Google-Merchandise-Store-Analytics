@@ -55,4 +55,4 @@ See Google's [BigQuery sample dataset guide](https://developers.google.com/analy
 
 ## Project status
 
-The GA4 screenshot analysis and local interactive dashboard are complete as a first-pass case study. All five public-sample query areas have run in the user's Cloud Sandbox. GitHub publishing and editing the user's actual CV remain outstanding.
+The GA4 screenshot analysis and interactive dashboard artifact are complete as a first-pass case study. All five public-sample query areas have run in the user's Cloud Sandbox. The case study is published in this repository; editing the user's actual CV and optionally deploying the dashboard as a live site remain outstanding.
