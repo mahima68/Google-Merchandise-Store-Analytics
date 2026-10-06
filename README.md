@@ -13,6 +13,7 @@ Understand how shoppers arrive, engage, browse products, and purchase; identify 
 ## What is in this repository
 
 - [`docs/business-questions.md`](docs/business-questions.md): question-to-metric map and what the screenshots answer.
+- [`docs/question-coverage.md`](docs/question-coverage.md): concise answer and evidence status for every original business question, with source and caveats.
 - [`docs/data-dictionary-and-scope.md`](docs/data-dictionary-and-scope.md): metric definitions, caveats, event/dimension dictionary, and access notes.
 - [`analysis/findings.md`](analysis/findings.md): evidence-based findings, recommendations, and limitations.
 - [`dashboard/index.html`](dashboard/index.html): a self-contained, interactive dashboard of the supplied GA4 report values.
