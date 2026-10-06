@@ -1,6 +1,5 @@
 -- User, engagement, device, and geography summaries.
--- Engagement events/session criteria are approximated at user level here; use GA4 UI
--- for exact reporting parity and document any differences.
+-- Reports distinct pseudonymous users, event counts, and purchase revenue by device/country.
 SELECT
   device.category AS device_category,
   geo.country AS country,
