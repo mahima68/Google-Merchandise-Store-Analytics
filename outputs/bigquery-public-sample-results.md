@@ -15,7 +15,7 @@
 | Data inventory | Completed | 179.02 MB | 4,295,584 event rows; 270,154 distinct pseudonymous users; 17 event names; dates 20201101–20210131 |
 | Acquisition by first-user source/medium | Completed | 223 MB | 12 source/medium rows returned. Top rows by purchase revenue included `google / organic` (103,487 users; 1,454 purchase events), `(direct) / (none)` (75,951; 1,251), `(data deleted) / (data deleted)` (17,948; 830), and Google Merchandise Store referral (26,065; 701). Revenue values were not captured in the saved screen notes, so no revenue ranking or amount is stated here. |
 | Product performance | Completed | 162.66 MB | Top revenue products captured below. |
-| Ordered session funnel | Completed | Not recorded | Session counts and rates captured below. |
+| Ordered session funnel | Earlier version executed; revised SQL pending rerun | Not recorded | Earlier session counts/rates retained below as historical output; they have not been recomputed with the revised sequential logic. |
 | Device/geography segmentation | Completed | 221.29 MB | 20 device/country combinations returned; leading user segments captured below. |
 
 ### Leading device/country segments by distinct users
@@ -44,7 +44,7 @@ Names containing an ellipsis were clipped in the captured BigQuery result view a
 
 ### Ordered session funnel
 
-This query builds sessions from `user_pseudo_id` and `ga_session_id`, then checks that the first observed event for each step occurs in order within that session. It is not the same method or cohort count as GA4's user-based Funnel Exploration.
+The counts below were captured from an earlier query revision that compared the first timestamp for each event type. The current `sql/05_session_funnel.sql` now searches for each next event strictly after the prior step and also returns overall, device-category, and country segments. The revised query has not been rerun, so these historical counts are not presented as its output. It is not the same method or cohort count as GA4's user-based Funnel Exploration.
 
 | Step | Sessions reaching step | Step-to-step continuation |
 |---|---:|---:|
@@ -57,4 +57,4 @@ Overall, 3.57% of sessions reaching `view_item` also reached an ordered `purchas
 
 ## Reproducibility and limitations
 
-The companion SQL files are in `sql/`. Query results above are only as complete as the visible results captured during the BigQuery runs. In particular, the acquisition result's revenue cells and the full product list were not preserved in this note. Run or reopen those saved queries if those exact values are needed. The public sample has obfuscated data and differs from the GA4 demo property's reports.
+The companion SQL files are in `sql/`. Query results above are only as complete as the visible results captured during the BigQuery runs. The revised ordered funnel SQL has not been rerun; rerun it before using or replacing the historical funnel counts above. In particular, the acquisition result's revenue cells and the full product list were not preserved in this note. Run or reopen those saved queries if those exact values are needed. The public sample has obfuscated data and differs from the GA4 demo property's reports.
