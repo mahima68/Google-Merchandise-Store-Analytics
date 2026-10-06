@@ -10,7 +10,7 @@ The largest funnel signal is an unusually severe drop between `begin_checkout` a
 
 The latest supplied Traffic acquisition report totals 129,908 sessions and $320,420.82 in revenue. Direct contributes 80,809 sessions (62.2%) and $180,633.62 (56.37%). Organic Search contributes 33,740 sessions (25.97%) and $99,795.72 (31.15%). Together they account for about 88.2% of sessions and 87.5% of revenue.
 
-Among larger channels, Referral reports $6.63 revenue per session and a 70.28% engagement rate across 2,251 sessions; Organic Search reports $2.96 per session across 33,740 sessions. Organic Social reports $16.03 per session, but only 699 sessions, so treat the rate as volatile. Paid Search reports $1.17 per session, 34.01% engagement, and 20 seconds average engagement across 6,254 sessions; investigate its targeting, landing pages, and traffic quality before changing spend.
+Among larger channels, Referral reports $6.57 revenue per session and a 70.28% engagement rate across 2,251 sessions; Organic Search reports $2.96 per session across 33,740 sessions. Organic Social reports $16.03 per session, but only 699 sessions, so treat the rate as volatile. Paid Search reports $1.17 per session, 34.01% engagement, and 20 seconds average engagement across 6,254 sessions; investigate its targeting, landing pages, and traffic quality before changing spend.
 
 The channel screenshot reports Session key event rate, which is not a purchase-only rate for this property. The earlier channel table's Purchasers ÷ Active Users can answer a user-based purchase-rate question, but it is a different report slice and must not be combined with the later session-channel table as if they were one extract.
 
