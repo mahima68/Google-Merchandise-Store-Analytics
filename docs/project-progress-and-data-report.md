@@ -14,14 +14,12 @@ Analyze how visitors arrive at the Google Merchandise Store, how they engage, wh
 - Wrote evidence-based findings, limitations, and recommendations.
 - Created a local interactive dashboard from the supplied GA4 screenshot values.
 - Executed five BigQuery query areas against Google's public obfuscated sample (inventory, first-user acquisition, device/geography, item performance, and an ordered session funnel); captured outputs and limits are documented separately.
-- Prepared accurate CV wording that does not claim a live/published dashboard.
 - Published and verified the case study files in `mahima68/Google-Merchandise-Store-Analytics`.
 
 ### Still to do
 
 - Reconcile GA4 funnel settings and date ranges, and validate ecommerce event instrumentation.
 - Replace manually transcribed dashboard values with validated query/report outputs if desired.
-- Edit the user's actual CV document if they provide it; at present the CV entry is prepared separately.
 - Optionally deploy the interactive dashboard as a live site; the HTML is currently committed in the repository.
 
 ## Data access: how to finish without owning the demo property's project
@@ -243,6 +241,5 @@ The very low displayed mobile rate compared with desktop merits a mobile checkou
 - `analysis/findings.md` — concise executive findings and recommendations.
 - `dashboard/index.html` — interactive local dashboard based on supplied GA4 figures.
 - `sql/01_data_inventory.sql` through `sql/05_session_funnel.sql` — SQL used for the five executed query areas; recorded outputs and scan estimates are in the output report.
-- `docs/cv-entry.md` — current CV wording and what not to claim yet.
 
 The SQL source is Google's public table `bigquery-public-data.ga4_obfuscated_sample_ecommerce.events_*`. Google's GA4 export schema uses one `analytics_<property_id>` dataset per linked property and daily `events_YYYYMMDD` tables when daily export is enabled. [Export schema reference](https://support.google.com/analytics/answer/7029846)
