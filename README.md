@@ -52,7 +52,7 @@ See Google's [BigQuery sample dataset guide](https://developers.google.com/analy
 - `items_purchased` is units, not order count. Item revenue and total revenue are different measures.
 - Funnel SQL is session-based, requires ordered events in the same session, and uses `user_pseudo_id` plus `ga_session_id` as the session key.
 - `traffic_source` is first-user attribution in the GA4 export, not session attribution. SQL is labeled accordingly; it does not claim to recreate GA4's default session channel group.
-- The funnel screenshots show a very large `add_to_cart` to `begin_checkout` decline. Verify funnel settings and event instrumentation before calling this a checkout defect.
+- The supplied funnel screenshots show a very large reported decline from `begin_checkout` to `purchase`. Verify funnel settings and event instrumentation before calling this a checkout defect.
 - Inventory, acquisition, product, device/geography, and session-funnel queries have been executed in Sandbox against the public sample. Recorded results and their scope are in [`outputs/bigquery-public-sample-results.md`](outputs/bigquery-public-sample-results.md).
 
 ## Project status
