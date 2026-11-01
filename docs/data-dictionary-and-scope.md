@@ -31,7 +31,7 @@ This project analyzes Google Analytics 4 (GA4) reports for the Google Merchandis
 | Analytics platform | Google Analytics 4 property labeled “GA4 - Google Merch Shop” | Confirm property/account details and access owner if publishing externally. |
 | Collection | GA4 reports for a web storefront | Confirm ecommerce implementation and event parameters. |
 | Report date range | Traffic acquisition report verified as **September 7–October 4, 2026**. The latest saved funnel exploration inspected in GA4 was set to **Last 28 days: September 8–October 5, 2026**. | The funnel screenshots previously shared may come from another saved funnel version; align dates and settings before comparing funnel results to reports. |
-| BigQuery link | GA4 Admin shows a completed link to project ID `adh-demo-data-review`, project name `Demoverse`; project location is United States (`us`). | The project is not owned by the analyst and is not available in the current Cloud account's project picker. The public obfuscated sample will be used for SQL practice; the linked dataset name, event tables, and schema remain unverified. |
+| BigQuery link | GA4 Admin shows a completed link to the linked demo-property Cloud project; project location is United States (`us`). | The project is not owned by the analyst and is not available in the current Cloud account's project picker. The public obfuscated sample will be used for SQL practice; the linked dataset name, event tables, and schema remain unverified. |
 | BigQuery event export configuration | Link detail shows 1 of 1 stream selected, no events excluded, and Daily plus Streaming (best-effort) selected for event data. GA4 could not retrieve Cloud project billing status; the UI warns streaming may not export at that frequency unless billing is enabled. | Confirm export tables and freshness in BigQuery after the terms step. User data export Daily is not selected. |
 | Currency | Revenue is displayed in USD | Confirm the property's reporting currency and whether all underlying transactions use USD. |
 | Data completeness | GA4 screens displayed “100% of available data” | This indicates the report used its available data; it does not validate event instrumentation or remove `(not set)` values. |
@@ -118,7 +118,7 @@ Metric definitions and scopes must be kept explicit because similarly named GA4 
 - Align the date range on each report and funnel exploration; multiple saved funnel explorations exist with different step configurations.
 - Investigate the purpose of the custom `xyz` key event and why it has no stream data detected.
 - Inspect ecommerce event parameters and transaction deduplication in the property.
-- The public sample's five query areas have been run in BigQuery Sandbox. The linked `adh-demo-data-review` export remains inaccessible unless its owner grants access.
+- The public sample's five query areas have been run in BigQuery Sandbox. The linked demo-property export remains inaccessible unless its owner grants access.
 - Export or capture the reports with date range and dimension visible so the results can be reproduced.
 
 ## Official references

@@ -23,13 +23,13 @@ Analyze how visitors arrive at the Google Merchandise Store, how they engage, wh
 
 ## Data access: how to finish without owning the demo property's project
 
-The Google Merchandise Store demo property is owned by Google. Access to its GA4 reports does not give the analyst ownership or IAM access to the Cloud project linked in GA4 Admin (`adh-demo-data-review`, displayed as “Demoverse”). Do not try to grant yourself permissions on that project; only a Cloud project owner or IAM administrator can do so.
+The Google Merchandise Store demo property is owned by Google. Access to its GA4 reports does not give the analyst ownership or IAM access to the Cloud project linked in GA4 Admin (project identifier omitted). Do not try to grant yourself permissions on that project; only a Cloud project owner or IAM administrator can do so.
 
 Use Google's **public obfuscated GA4 ecommerce sample** for the SQL portfolio work instead. It is a different dataset from the demo property reports and covers **November 1, 2020 through January 31, 2021**. Google explicitly cautions that it cannot be compared to the Analytics demo account. [Google's sample-dataset guide](https://developers.google.com/analytics/bigquery/web-ecommerce-demo-dataset)
 
 ### BigQuery Sandbox route
 
-1. A Google Cloud project, **GMS Analytics** (`gms-analytics-510721`), has now been created under the signed-in account.
+1. A dedicated analyst-owned Google Cloud project was created for the Sandbox analysis.
 2. BigQuery Studio opens in **Sandbox** mode. The paid trial was not started and billing was not enabled.
 3. The inventory query's displayed estimate was **179.02 MB** and returned **4,295,584 event rows**, **270,154 distinct pseudonymous users**, and **17 event names**.
 4. Acquisition, product, ordered session-funnel, and device/geography queries were also run. Their captured results and estimates are recorded in [`../outputs/bigquery-public-sample-results.md`](../outputs/bigquery-public-sample-results.md).
@@ -41,11 +41,11 @@ The first-user acquisition query (223 MB displayed estimate) was re-run successf
 
 ### BigQuery execution status
 
-The Cloud project is **GMS Analytics** (`gms-analytics-510721`), and BigQuery Sandbox is active. The paid trial was not started and billing was not enabled. Five query areas completed; verified scan estimates and the captured inventory, funnel, acquisition, product, and device/geography observations are in [`../outputs/bigquery-public-sample-results.md`](../outputs/bigquery-public-sample-results.md). Do not start a paid trial merely to run the public sample.
+The Cloud project is a dedicated analyst-owned Sandbox project, and BigQuery Sandbox is active. The paid trial was not started and billing was not enabled. Five query areas completed; verified scan estimates and the captured inventory, funnel, acquisition, product, and device/geography observations are in [`../outputs/bigquery-public-sample-results.md`](../outputs/bigquery-public-sample-results.md). Do not start a paid trial merely to run the public sample.
 
 ### If you need the actual demo property's own raw export
 
-Only the owner/administrator of `adh-demo-data-review` can grant access. The required access for query work is generally BigQuery Job User on the job project and BigQuery Data Viewer on the export dataset. [Google's query-role requirements](https://docs.cloud.google.com/bigquery/docs/running-queries). Because you are working individually and do not own that project, the public sample is the practical route for the SQL portion. To export future data from a property you control, link that property to your own Cloud project; this does not retroactively give you the demo property's raw history. [GA4 BigQuery export setup](https://support.google.com/analytics/answer/9823238)
+Only the owner/administrator of the linked demo-property Cloud project can grant access. The required access for query work is generally BigQuery Job User on the job project and BigQuery Data Viewer on the export dataset. [Google's query-role requirements](https://docs.cloud.google.com/bigquery/docs/running-queries). Because you are working individually and do not own that project, the public sample is the practical route for the SQL portion. To export future data from a property you control, link that property to your own Cloud project; this does not retroactively give you the demo property's raw history. [GA4 BigQuery export setup](https://support.google.com/analytics/answer/9823238)
 
 ## Source and comparison rules
 
