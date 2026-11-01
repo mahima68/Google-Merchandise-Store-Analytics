@@ -42,7 +42,7 @@ It is the official obfuscated Google Merchandise Store ecommerce sample. It is *
 2. Select a Cloud project you own or can use. Do not activate a paid trial or attach billing solely for this project unless you choose to.
 3. Open BigQuery Studio and set the query processing location to **US**.
 4. Open a SQL file from `sql/`, inspect the bytes-to-process estimate, and run it only if comfortable with the estimate and applicable Sandbox limits.
-5. The public source table is read-only; query jobs run in your selected project. Do not substitute `adh-demo-data-review` unless you have been explicitly granted access.
+5. The public source table is read-only; query jobs run in your selected project. The demo property's linked export requires separate access from its owner.
 
 See Google's [BigQuery sample dataset guide](https://developers.google.com/analytics/bigquery/web-ecommerce-demo-dataset) and [GA4 export schema](https://support.google.com/analytics/answer/7029846).
 
