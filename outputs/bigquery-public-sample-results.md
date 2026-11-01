@@ -4,7 +4,7 @@
 
 - Source: `bigquery-public-data.ga4_obfuscated_sample_ecommerce.events_*`
 - Date range: **2020-11-01 to 2021-01-31** (table suffixes `20201101`–`20210131`)
-- Google Cloud project used to run queries: **GMS Analytics** (`gms-analytics-510721`)
+- Google Cloud project used to run queries: a dedicated analyst-owned Sandbox project
 - Execution mode: BigQuery **Sandbox**; paid trial not started and billing not enabled
 - This is Google's separate, obfuscated public sample. These results do **not** reproduce or combine with the 2026 GA4 screenshots in this case study.
 
